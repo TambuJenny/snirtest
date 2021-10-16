@@ -1,0 +1,81 @@
+.singIndex
+{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+ .menusingIndex
+ {
+  padding-top: 15vh;
+   
+    width:  45vh;
+    /*border:1px solid white;*/
+ }
+  .allsocialink
+  {
+  
+   .sociaLink
+   {
+   margin-bottom: 10px;
+    overflow: hidden;
+     height: 6.5vh;
+    border: 1px solid #363041;
+    border-radius: 5px;
+    display: flex;
+   
+     width: auto;
+     background-color: #363041;
+     .urlink{
+      padding-left: 15px;
+      width: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      a{
+       color: whitesmoke;
+       font-size: 0.7em;
+      }
+      
+     }
+     .imglink
+     {
+      
+      height: auto;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      width: 64px;
+      background-color:#B4ACF9 ;
+     }
+   }
+  }
+
+  .alldata
+  {
+   padding-top: 20px;
+   form
+   {
+    display: flex;
+    flex-direction: column;
+    label
+    {
+     color:#B4ACF9;
+     padding: 5% 0%;
+    }
+    input
+    {
+     height:6.5vh;
+     border:1px solid #363041;
+     border-radius: 5px;
+     background-color: #363041;
+     padding-left: 25px;
+     color:whitesmoke;
+     ::placeholder
+     {
+      color:whitesmoke;
+     }
+    }
+   }
+  }
+}

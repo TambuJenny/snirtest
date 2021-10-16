@@ -1,0 +1,78 @@
+.principalHome
+{
+ 
+  margin-left: 5%;
+  margin-right: 5%;
+  .headerIndex
+  {
+   display: flex;
+   
+   align-items: center;
+   justify-content: space-between;
+
+   .title
+   {
+    width: 30%;
+    color: white;
+
+    h3{
+     font-size: 1.5em;
+    }
+   }
+
+   .menu
+   {
+    width: 25%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .buttonIndexSing
+   {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+   }
+  }
+  .bodyIndex
+  {
+   margin-top: 10vh;
+  
+   display: flex;
+   .descriptionIndex
+   {
+    padding-top: 10vh;
+     width: 50%;
+    .greatText
+   {
+    p
+    {
+     font-size: 2.5em;
+     color:whitesmoke
+    }
+   }
+   .smallText
+   {
+     p
+     {
+      color:whitesmoke
+     }
+   }
+   }
+   .imgIndex
+    {
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding-left: 3em;
+    img
+    {
+    max-width: 450px;
+    }
+    }
+   
+  }
+}

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;700&display=swap');
+
+body
+{
+  background-color:#2E2938 ;
+  margin: 0;
+  padding: 0;
+}
+
+p, h1,h2,h3,h4,label,i,a
+{
+ font-family: 'Asap';
+}
+
+a, li
+{
+ text-decoration: none;
+ font-style: none;
+}
+
+.buttonLink
+{
+  background-color: #B4ACF9;
+  color: #2E2938;
+  font-size: 0.9em;
+  font-weight: 200;
+  border: 1px solid #B4ACF9;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 84px;
+  height: 40px;
+}
+
+
+.colorbutton
+{
+  color:whitesmoke;
+}
+
+Link .colorbutton :hover
+{
+  color: #B4ACF9;
+}
+
+.title
+{
+ width: 30%;
+ color: white;
+
+ h3{
+   a{
+     color: white;
+   }
+  font-size: 1.5em;
+ }
+}

@@ -1,0 +1,24 @@
+.bodyelement
+{
+ display: flex;
+ align-items: center;
+ padding-left: 20%;
+ padding-right: 20%;
+ 
+ .top
+ {
+  
+  padding-top: 15vh;
+  h3
+  {
+   color: white;
+   font-size: 2em;
+   margin: 0;
+  }
+  p
+  {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.8em;
+  }
+ }
+}
