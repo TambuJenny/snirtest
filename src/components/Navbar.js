@@ -14,7 +14,7 @@ export default function Navbar()
         <div className="taskadd">
            <button>
              <img src={Add} alt="" />
-             Add Task 
+             Add produto
            </button>
         </div>
      </div>

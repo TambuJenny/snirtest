@@ -13,8 +13,8 @@ export default function Task()
        <body>
         <div className="bodyelement">
         <div className="top">
-         <h3> My Tasks</h3>
-         <p>Register your tasks and have a better monitoring of your activities</p>
+         <h3> Meus Produtos </h3>
+         <p>Produtos vendidos, Produtos postado, produtos disponivel </p>
         </div>
         </div>
        </body>
