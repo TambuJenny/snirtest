@@ -1,0 +1,47 @@
+.DivTask
+{
+  background-color:#363041;
+   border: 1px solid #363041 ;
+   border-radius: 5px;
+   padding: 5px;
+   
+
+ .inputDivTask
+ {
+   height: auto;
+   width: auto;
+   display:flex ;
+   align-items: center;
+   height: 5vh;
+   width: auto;
+   input
+   {
+     display: flex;
+     align-items: center;
+     width:4% ;
+     background-color: #B4ACF9;
+     border: 1px solid #B4ACF9 ;
+     border-radius: 2px;
+
+   }
+   .text
+   {
+      width:100% ;
+     
+      background-color:#363041;
+      border: none;
+      padding-left: 15px;
+      color: white;
+      ::placeholder
+      {
+            color: whitesmoke;
+      }
+
+   }
+ }
+}
+
+.end
+ {
+  text-decoration: line-through;
+ }

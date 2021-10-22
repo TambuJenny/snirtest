@@ -1,8 +1,9 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import './../styles/Task.scss'
+import Task from '../components/Task'
 
-export default function Task()
+export default function TaskComponent()
 {
  return(
      
@@ -24,6 +25,7 @@ export default function Task()
         </div>
         <div className="taskDiv">
           <h3>Tasks</h3>
+          <Task  text=" Teste"verification={true} date="Today" ></Task>
         </div>
         </div>
        </body>
