@@ -1,24 +1,26 @@
-.DivTask
+.TaskDiv
 {
-  background-color:#363041;
+   background-color:#363041;
    border: 1px solid #363041 ;
    border-radius: 5px;
-   padding: 5px;
+   padding: 10px;
+   height: auto;
+   margin-top:2vh;
+   margin-bottom: 2vh;
    
 
- .inputDivTask
+ .DivTask
  {
    height: auto;
    width: auto;
    display:flex ;
    align-items: center;
-   height: 5vh;
+   height: auto;
    width: auto;
    input
    {
-     display: flex;
-     align-items: center;
-     width:4% ;
+     
+     width:10% ;
      background-color: #B4ACF9;
      border: 1px solid #B4ACF9 ;
      border-radius: 2px;
@@ -26,15 +28,13 @@
    }
    .text
    {
-      width:100% ;
-     
-      background-color:#363041;
-      border: none;
+    margin-top: 0;
+    margin-bottom: 0;
       padding-left: 15px;
       color: white;
       ::placeholder
       {
-            color: whitesmoke;
+         color: whitesmoke;
       }
 
    }

@@ -25,8 +25,14 @@ export default function TaskComponent()
         </div>
         <div className="taskDiv">
           <h3>Tasks</h3>
-          <Task  text=" Teste"verification={true} date="Today" ></Task>
-        </div>
+          <div className="taskk">
+          <Task  text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus enim, amet minima impedit tempore recusandae delectus ea aut eaque! Alias itaque dicta placeat ipsum iste facilis esse architecto asperiores!"verification={true} date="Today" ></Task>
+          <Task  text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus enim, amet minima impedit tempore recusandae delectus ea aut eaque! Alias itaque dicta placeat ipsum iste facilis esse architecto asperiores!"verification={true} date="Today" ></Task>
+          <Task  text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus enim, amet minima impedit tempore recusandae delectus ea aut eaque! Alias itaque dicta placeat ipsum iste facilis esse architecto asperiores!"verification={true} date="Today" ></Task>
+          <Task  text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus enim, amet minima impedit tempore recusandae delectus ea aut eaque! Alias itaque dicta placeat ipsum iste facilis esse architecto asperiores!"verification={true} date="Today" ></Task>
+        
+          </div>
+         </div>
         </div>
        </body>
      </div>

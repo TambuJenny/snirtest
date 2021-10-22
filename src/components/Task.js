@@ -17,8 +17,8 @@ function changeSstate ()
  }
 }
  return (
-   <div className="DivTask">
-     <div className="inputDivTask">
+   <div className="TaskDiv">
+     <div className="DivTask">
         <input type="checkbox" name="" id="" onChange={changeSstate} />
          <p id='taskName' className="text">{props.text}</p>
         <button>
