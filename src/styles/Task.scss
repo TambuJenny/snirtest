@@ -1,13 +1,13 @@
 .bodyelement
 {
  display: flex;
- align-items: center;
+ flex-direction: column;
+ 
  padding-left: 20%;
  padding-right: 20%;
  
  .top
  {
-  
   padding-top: 15vh;
   h3
   {
@@ -20,5 +20,50 @@
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.8em;
   }
+ }
+
+ .inputDiv
+ {
+   display:flex ;
+   height: 5vh;
+   width: auto;
+   background-color:#363041;
+   border: 1px solid #363041 ;
+   border-radius: 5px;
+   padding: 5px;
+
+   button
+   {
+     display: flex;
+     align-items: center;
+     width:4% ;
+     background-color: #B4ACF9;
+     border: 1px solid #B4ACF9 ;
+     border-radius: 2px;
+
+   }
+   input
+   {
+      width:100% ;
+      background-color:#363041;
+      border: none;
+      padding-left: 15px;
+      color: white;
+      ::placeholder
+      {
+            color: whitesmoke;
+      }
+
+   }
+ }
+ .taskDiv
+ {
+   padding-top: 10vh;
+   h3
+   {
+    color: white;
+    font-size: 2em;
+    margin: 0;
+   }
  }
 }

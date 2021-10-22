@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import imgIndex from './../img/Reading list-cuate 1.png'
 import Title from '../components/Title'
 
+import ModalLog from './../components/LoginModal'
+
 
 
 export default function Home ()
@@ -33,6 +35,7 @@ export default function Home ()
       </header>
 
       <body className="bodyIndex">
+        <ModalLog/>
        <div className="descriptionIndex">
            <div className="greatText">
             <p><b style={{color:'#B4ACF9',textDecoration:'Bold'}}>Creative Digital</b> Design Agency is looking for new talent</p>

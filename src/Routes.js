@@ -1,7 +1,7 @@
 import {Route,BrowserRouter,Switch} from  'react-router-dom'
 import Index from './../src/pages/Home'
 import Singin from './pages/SingIn'
-import Task from './pages/TaskAdd'
+import Task from './pages/AllTask'
 
 export default function route()
 {
@@ -9,7 +9,7 @@ export default function route()
     <BrowserRouter>
      <Route path="/" exact component={Index}  />
      <Route path="/Singin" component={Singin}  />
-     <Route path="/addtask" component={Task}  />
+     <Route path="/alltask" component={Task}  />
     </BrowserRouter>
   
   )
