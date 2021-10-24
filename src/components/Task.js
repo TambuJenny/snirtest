@@ -3,10 +3,17 @@ import './../styles/TaskComponent.scss'
 
 export default function TaskComponent (props)
 {
+    
+  if(!props.verification)
+  {
+    let getElem = document.getElementById(`${props.id}`)
+    getElem?.classList.add('enable')
+  }
 
 function changeSstate ()
 {
- let getDom = document.querySelector('.text')
+ let getDom = document.getElementById(`${props.id}`)
+ alert(props.id)
  if(props.verification)
  {
   if(getDom.classList.contains('end'))
@@ -15,17 +22,20 @@ function changeSstate ()
   getDom.classList.add('end')
  
  }
+ 
 }
  return (
    <div className="TaskDiv">
+     <p className="title"> {props.title}</p>
      <div className="DivTask">
-        <input type="checkbox" name="" id="" onChange={changeSstate} />
-         <p id='taskName' className="text">{props.text}</p>
-        <button>
+        <input type="checkbox" enable ='false'name="" onChange={changeSstate} />
+         <p className="text" id={props.id}>{props.text}</p>
+       <div className="btn">
+       <button>
           <img src="" alt="" />
         </button>
+       </div>
         </div>
-
    </div>
  )
 }

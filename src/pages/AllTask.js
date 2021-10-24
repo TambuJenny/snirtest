@@ -1,12 +1,67 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Navbar from '../components/Navbar';
 import './../styles/Task.scss'
 import Task from '../components/Task'
 
 export default function TaskComponent()
 {
+  const [value,setvalue]= useState('')
+    const tarefas =[
+      {
+        
+        id:1,
+        nome:'Dormir',
+        descricao:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in deserunt eveniet nostrum, expedita repudiandae ducimus, non provident velit fuga sapiente quaerat quod id? Blanditiis ab molestias maxime facere? Nam?',
+        hora: '15:30',
+        estado: true
+
+      },
+      {
+        id:2,
+        nome:'Comer',
+        descricao:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in deserunt eveniet nostrum, expedita repudiandae ducimus, non provident velit fuga sapiente quaerat quod id? Blanditiis ab molestias maxime facere? Nam?',
+        hora: '10:30',
+        estado: true
+
+      },
+      {
+        id:3,
+        nome:'Jogar bola',
+        descricao:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in deserunt eveniet nostrum, expedita repudiandae ducimus, non provident velit fuga sapiente quaerat quod id? Blanditiis ab molestias maxime facere? Nam?',
+        hora: '18:30',
+        estado: false
+
+      },
+      {
+        id:4,
+        nome:'Jogar bola',
+        descricao:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in deserunt eveniet nostrum, expedita repudiandae ducimus, non provident velit fuga sapiente quaerat quod id? Blanditiis ab molestias maxime facere? Nam?',
+        hora: '18:30',
+        estado: false
+
+      },
+      {
+        id:5,
+        nome:'Jogar bola',
+        descricao:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in deserunt eveniet nostrum, expedita repudiandae ducimus, non provident velit fuga sapiente quaerat quod id? Blanditiis ab molestias maxime facere? Nam?',
+        hora: '18:30',
+        estado: false
+
+      },
+      {
+        id:6,
+        nome:'Jogar bola',
+        descricao:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis in deserunt eveniet nostrum, expedita repudiandae ducimus, non provident velit fuga sapiente quaerat quod id? Blanditiis ab molestias maxime facere? Nam?',
+        hora: '18:30',
+        estado: false
+
+      }
+
+    ]
+    
+
  return(
-     
+      
      <div>
         <header>
          <Navbar/>
@@ -21,16 +76,21 @@ export default function TaskComponent()
           <button>
             <img src="" alt="" />
           </button>
-          <input type="text" placeholder="Search" />
+          <input type="text" placeholder="Search" value={value} onChange={(e)=>{
+               setvalue(e.target.value) 
+           
+
+          }}/>
         </div>
         <div className="taskDiv">
           <h3>Tasks</h3>
           <div className="taskk">
-          <Task  text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus enim, amet minima impedit tempore recusandae delectus ea aut eaque! Alias itaque dicta placeat ipsum iste facilis esse architecto asperiores!"verification={true} date="Today" ></Task>
-          <Task  text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus enim, amet minima impedit tempore recusandae delectus ea aut eaque! Alias itaque dicta placeat ipsum iste facilis esse architecto asperiores!"verification={true} date="Today" ></Task>
-          <Task  text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus enim, amet minima impedit tempore recusandae delectus ea aut eaque! Alias itaque dicta placeat ipsum iste facilis esse architecto asperiores!"verification={true} date="Today" ></Task>
-          <Task  text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus enim, amet minima impedit tempore recusandae delectus ea aut eaque! Alias itaque dicta placeat ipsum iste facilis esse architecto asperiores!"verification={true} date="Today" ></Task>
-        
+                  {
+                   
+            tarefas.map(tarefas =>[
+              <Task key ={tarefas.id} title={tarefas.nome}  text={tarefas.descricao} verification={tarefas.estado} date={tarefas.hora} id={tarefas.id} ></Task>
+            ])
+          }
           </div>
          </div>
         </div>

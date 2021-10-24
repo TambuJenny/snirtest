@@ -8,11 +8,18 @@
    margin-top:2vh;
    margin-bottom: 2vh;
    
+   p.title
+   { 
+     margin: 0;
+     padding-left: 6.4em;
+     padding-bottom: 0.5em;
+     font-weight: 700;
+     color: #B4ACF9;
+   }
+   
 
  .DivTask
  {
-   height: auto;
-   width: auto;
    display:flex ;
    align-items: center;
    height: auto;
@@ -24,13 +31,17 @@
      background-color: #B4ACF9;
      border: 1px solid #B4ACF9 ;
      border-radius: 2px;
+     height: 3vh;
+     color: -internal-light-dark(#B4ACF9,#B4ACF9)
 
    }
    .text
    {
+     text-align: justify;
+     width: 80%;
     margin-top: 0;
     margin-bottom: 0;
-      padding-left: 15px;
+     
       color: white;
       ::placeholder
       {
@@ -38,10 +49,32 @@
       }
 
    }
+   .btn
+   {
+    
+     margin-left: 2%;
+     margin-right: 2%;
+
+     button{
+      width: 3vh ;
+      background-color: #B4ACF9;
+      border: 1px solid #B4ACF9 ;
+      border-radius: 2px;
+      height: 3vh;
+      color: -internal-light-dark(#B4ACF9,#B4ACF9)
+  
+     }
+   }
  }
 }
 
 .end
  {
+  text-decoration: line-through;
+ }
+
+ .enable
+ {
+  color:rgb(48, 48, 48);
   text-decoration: line-through;
  }
