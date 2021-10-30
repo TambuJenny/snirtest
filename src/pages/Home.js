@@ -10,9 +10,7 @@ import ModalLog from './../components/LoginModal'
 
 export default function Home ()
 {
- const listMenu = ['About','Cases','Resources']
- const {teste, seteste} = useContext(DadoTarefa)
- seteste('teste')
+
  return(
     <div className="principalHome">
 
