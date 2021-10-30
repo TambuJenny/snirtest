@@ -1,10 +1,15 @@
-import React,{useState} from 'react';
+import React,{useState,useContext,createContext} from 'react';
 import Navbar from '../components/Navbar';
 import './../styles/Task.scss'
 import Task from '../components/Task'
 
+import { DadoTarefa } from '../Routes';
+
 export default function TaskComponent()
 {
+
+const DadosUser = useContext(DadoTarefa)
+ 
   const [value,setvalue]= useState('')
     const tarefas =[
       {
@@ -78,7 +83,15 @@ export default function TaskComponent()
           </button>
           <input type="text" placeholder="Search" value={value} onChange={(e)=>{
                setvalue(e.target.value) 
-           
+            let vetor = []
+                tarefas. map(tarefas =>{
+                        vetor.push(tarefas.nome)
+                })
+
+                for (let index = 0; index < vetor.length; index++) {
+                    
+                }
+            
 
           }}/>
         </div>

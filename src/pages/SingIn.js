@@ -1,8 +1,12 @@
-import React from 'react'
+import React,{createContext, useState} from 'react'
 import './../styles/Singin.scss'
 import Title from '../components/Title'
 import Google from './../img/Vectorg.png'
 import Facebook from './../img/Vectorf.png'
+
+export const ValoreUserContext=createContext()
+
+
 
 export default function Singin()
 {

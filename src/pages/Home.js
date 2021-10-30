@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './../styles/Home.scss'
 import { Link } from 'react-router-dom'
 import imgIndex from './../img/Reading list-cuate 1.png'
 import Title from '../components/Title'
-
+import {DadoTarefa} from  './../Routes'
 import ModalLog from './../components/LoginModal'
 
 
@@ -11,6 +11,8 @@ import ModalLog from './../components/LoginModal'
 export default function Home ()
 {
  const listMenu = ['About','Cases','Resources']
+ const {teste, seteste} = useContext(DadoTarefa)
+ seteste('teste')
  return(
     <div className="principalHome">
 
@@ -36,6 +38,7 @@ export default function Home ()
 
       <body className="bodyIndex">
         <ModalLog/>
+     <p>  {teste}</p>
        <div className="descriptionIndex">
            <div className="greatText">
             <p><b style={{color:'#B4ACF9',textDecoration:'Bold'}}>Creative Digital</b> Design Agency is looking for new talent</p>
