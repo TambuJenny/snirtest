@@ -17,26 +17,18 @@ export default function Home ()
       <header className="headerIndex">
        <Title/>
        <div className="menu"> 
-        {
-          listMenu.map(element =>(
-           
-           <Link to={"/"+element} id= {element}  className="colorbutton"  >{element}</Link>
-          ))
-          
-       }
-        {/*  <Link to="" style={{color:'whiteSmoke'}}>{lista[1]}</Link>*/ }
+        
        </div>
       
        <div className="buttonIndexSing">
        <Link to="" className="buttonLink">Sign in</Link>
        </div>
        
-
       </header>
 
       <body className="bodyIndex">
         <ModalLog/>
-     <p>  {teste}</p>
+  
        <div className="descriptionIndex">
            <div className="greatText">
             <p><b style={{color:'#B4ACF9',textDecoration:'Bold'}}>Creative Digital</b> Design Agency is looking for new talent</p>
